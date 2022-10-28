@@ -26,5 +26,7 @@ describe("Sierra lead creation", function () {
     cy.get(
       "#lead-detail-actions-pane-10 > :nth-child(3) > .ld-add-event-footer > .btn"
     ).click();
+    cy.get(".pull-left > .dropdown > .btn").click();
+    cy.get('.pending > a').click();
   });
 });
